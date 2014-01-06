@@ -23,7 +23,7 @@
       .form-signin {
         max-width: 330px;
         padding: 15px;
-        margin: 0 auto;
+        margin: 50 auto;
       }
       .form-signin .form-signin-heading,
       .form-signin .checkbox {
@@ -55,6 +55,70 @@
         border-top-right-radius: 0;
       }
 
+      /* Sticky footer styles
+-------------------------------------------------- */
+
+html,
+body {
+  height: 100%;
+  /* The html and body elements cannot have any padding or margin. */
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+  min-height: 100%;
+  height: auto;
+  /* Negative indent footer by its height */
+  margin: 0 auto -60px;
+  /* Pad bottom by footer height */
+  padding: 0 0 60px;
+}
+
+/* Set the fixed height of the footer here */
+#footer {
+  height: 60px;
+  background-color: #eee;
+}
+
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+.container {
+  width: auto;
+  max-width: 680px;
+  padding: 0 15px;
+}
+.container .credit {
+  margin: 0 0;
+  padding: 8px 0 4px 0;
+}
+
+.caret-up {
+    /* Safari */
+    -webkit-transform: rotate(-180deg);
+    
+    /* Firefox */
+    -moz-transform: rotate(-180deg);
+    
+    /* IE */
+    -ms-transform: rotate(-180deg);
+    
+    /* Opera */
+    -o-transform: rotate(-180deg);
+    
+    /* Internet Explorer */
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=6);
+
+}
+
+.drop-up {
+    top: auto;
+    bottom: 100% !important;
+}
+
+
     </style>
 
     <!-- Just for debugging purposes. Don't actually copy this line! -->
@@ -82,11 +146,57 @@
       </form>
 
     </div> <!-- /container -->
+  
+
+    <div id="footer">
+      <div class="container">
+        <p class="text-muted credit">
+            <div class="btn-group">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                    Dropup <span class="caret caret-up"></span>
+                </button>
+                <ul class="dropdown-menu drop-up" role="menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                </ul>
+            </div>
+            <div class="btn-group">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                    Examples <span class="caret caret-up"></span>
+                </button>
+                <ul class="dropdown-menu drop-up" role="menu">
+                    <li><a href="1starter-template.html">Starter Template</a></li>
+                    <li><a href="2grids.html">Grids</a></li>
+                    <li><a href="3jumbotron.html">JumboTron</a></li>
+                    <li><a href="4narrow-jumbotron.html">Narrow JumboTron</a></li>
+                    <li><a href="5navbar.html">Navbar</a></li>
+                    <li><a href="6navbar-fixed-top.html">Fixed Navbar</a></li>
+                    <li><a href="7navbar-static-top.html">Static Navbar</a></li>
+                    <li><a href="8signin.html">Sign In</a></li>
+                    <li><a href="9sticky-footer.html">Sticky Footer</a></li>
+                    <li><a href="10sticky-footer-navbar.html">Sticky Footer Navbar</a></li>
+                    <li><a href="11justified-nav.html">Justified Navigation</a></li>
+                    <li><a href="12offcanvas.html">OffCanvas</a></li>
+                    <li><a href="13carousel.html">Carousel</a></li>
+                    <li><a href="14non-responsive.html">Non Responsive</a></li>
+                    <li><a href="15theme.html">Theme</a></li>
+                </ul>
+            </div>
+            
+        </p>
+      </div>
+    
+    
 
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
+    <script src="jquery/jquery-1.10.2.min.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
   
 
 </body></html>

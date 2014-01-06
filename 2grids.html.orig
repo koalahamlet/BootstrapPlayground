@@ -213,8 +213,11 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
+<<<<<<< HEAD
+
+=======
     <script src="jquery/jquery-1.10.2.min.js"></script>
     <script src="dist/js/bootstrap.min.js"></script>  
-
+>>>>>>> e3e66292d97201420a2e87b8b5da0b6bd6c71050
 
 </body></html>
